@@ -1,0 +1,264 @@
+package com.ivanov.tech.map.service;
+
+import java.io.IOException;
+
+
+
+
+
+
+
+
+import com.ivanov.tech.map.Map;
+import com.ivanov.tech.map.provider.DBContentProvider;
+import com.ivanov.tech.map.provider.DBContract;
+import com.ivanov.tech.session.Session;
+
+import android.app.Service;
+import android.content.ContentValues;
+import android.content.Context;
+import android.content.Intent;
+import android.content.SharedPreferences;
+import android.location.Location;
+import android.location.LocationListener;
+import android.location.LocationManager;
+import android.net.Uri;
+import android.os.Binder;
+import android.os.Bundle;
+import android.os.IBinder;
+import android.util.Log;
+import android.widget.RadioButton;
+import android.widget.Toast;
+
+public class ServiceGPS extends Service implements LocationListener{
+	
+	private static final String TAG = ServiceGPS.class.getSimpleName();
+	
+	//Google vars
+	Location googlelocation = null; 
+	LocationManager googlelocationManager;
+	boolean isGPSEnabled = false;
+	boolean isNetworkEnabled=false;
+	double latitude; 
+	double longitude; 
+	
+	public IBinder onBind(Intent intent) {
+	    Log.d(TAG, "onBind");
+	    
+	    return new Binder();	    
+	}
+
+	public void onRebind(Intent intent) {
+	    super.onRebind(intent);
+	    Log.d(TAG, "onRebind");	    
+	}
+	
+	public boolean onUnbind(Intent intent) {
+	    Log.d(TAG, "onUnbind");
+	    
+	    return super.onUnbind(intent);
+	}
+	
+	public int onStartCommand (Intent intent, int flags, int startId)	{	     
+		super.onStartCommand(intent, flags, startId);
+		
+		Log.d(TAG, "onStartCommand startId="+startId );
+		
+		if(currentBestLocation!=null){
+			Log.d(TAG, "onStartCommand simulate currentBestLocation");
+			updateMyLocation(currentBestLocation.getLatitude(),currentBestLocation.getLongitude(),currentBestLocation.getAltitude(),System.currentTimeMillis(),currentBestLocation.getAccuracy(),DBContract.PROVIDER_GOOGLE);
+		}
+		
+		this.stopSelf();
+		
+		return START_STICKY;	     
+	}
+	
+	@Override
+	public void onCreate() {
+		super.onCreate();
+		Log.d(TAG, "onCreate");
+				
+		switch(Map.getProvider()){		
+		case DBContract.PROVIDER_BAIDU:
+			
+			break;
+			
+		case DBContract.PROVIDER_GOOGLE:
+			InitiateGoogle();
+			break;
+			
+		}
+	}
+	
+	@Override
+	public void onDestroy() {
+		super.onDestroy();
+		Log.d(TAG, "onDestroy");
+		
+		if(googlelocationManager!=null)
+			googlelocationManager.removeUpdates(this);	
+		
+	}
+	
+//----------------Initiate Map-Provider---------------------
+	
+	void InitiateGoogle(){
+		Log.d(TAG, "InitiateGoogle");
+		try {
+			googlelocationManager = (LocationManager) this
+					.getSystemService(LOCATION_SERVICE);
+
+			isGPSEnabled = googlelocationManager
+					.isProviderEnabled(LocationManager.GPS_PROVIDER);
+			isNetworkEnabled=googlelocationManager.isProviderEnabled(LocationManager.NETWORK_PROVIDER);
+
+			// First get location from Network Provider
+			if(isNetworkEnabled){
+				
+				Log.d(TAG,"InitiateGoogle isNetworkEnabled");
+				
+				if(googlelocationManager!=null){
+					googlelocationManager.requestLocationUpdates(LocationManager.NETWORK_PROVIDER, Map.UPDATE_MIN_SPAN, Map.UPDATE_MIN_DISTANCE, this);
+					//Toast.makeText(this,"Location Listener on NETWORK_PROVIDER started...",Toast.LENGTH_SHORT).show();
+				
+					googlelocation=googlelocationManager.getLastKnownLocation(LocationManager.NETWORK_PROVIDER);
+										
+					if(googlelocation!=null){
+						latitude=googlelocation.getLatitude();
+						longitude=googlelocation.getLongitude();
+					}
+				}
+			}
+			
+			if (isGPSEnabled) {
+				// After location-provider get location from GPS
+				Log.d(TAG,"InitiateGoogle isNetworkEnabled");
+				
+				if (googlelocationManager != null) {				
+					googlelocationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER,Map.UPDATE_MIN_SPAN, Map.UPDATE_MIN_DISTANCE, this);					
+					//Toast.makeText(this,"Location Listener on GPS_PROVIDER started...",Toast.LENGTH_SHORT).show();
+				}				
+				
+				googlelocation = googlelocationManager.getLastKnownLocation(LocationManager.GPS_PROVIDER);		
+				if (googlelocation != null) {
+					latitude = googlelocation.getLatitude();
+					longitude = googlelocation.getLongitude();
+				}
+						
+			}else{
+				Log.e(TAG,"InitiateGoogle no provider enabled");
+			}
+			
+		} catch (Exception e) {
+			Log.e(TAG,"InitiateGoogle Exception e="+e);		
+		}
+	}
+	
+//-----------------DB Methods-------------------------
+	
+	private void updateMyLocation(double latitude, double longitude, double altitude, long timestamp, float accuracy, int provider){
+		 
+	 	ContentValues values=new ContentValues();
+	 	values.put(DBContract.UserLocation.COLUMN_NAME_USER_ID, Session.getUserId());
+	 	values.put(DBContract.UserLocation.COLUMN_NAME_LATITUDE, latitude);
+	 	values.put(DBContract.UserLocation.COLUMN_NAME_LONGITUDE, longitude);
+	 	values.put(DBContract.UserLocation.COLUMN_NAME_TIMESTAMP, timestamp);
+	 	values.put(DBContract.UserLocation.COLUMN_NAME_TIMESTAMP_LOCAL, System.currentTimeMillis());
+	 	values.put(DBContract.UserLocation.COLUMN_NAME_ACCURACY, accuracy);
+	 	values.put(DBContract.UserLocation.COLUMN_NAME_PROVIDER, provider);
+	 		 		 	
+	 	if(getContentResolver().update(DBContentProvider.URI_MY_LOCATION, values, null, null)==0){
+	 		getContentResolver().insert(DBContentProvider.URI_USER_LOCATION, values);
+	 	}
+	}
+	
+//--------------------Google listener--------------------
+	
+	@Override
+	public void onLocationChanged(Location location) {
+		Log.d(TAG, "onLocationChanged lat=" + location.getLatitude() + " lon="
+				+ location.getLongitude()+" acc="+location.getAccuracy()+" prov="+location.getProvider());
+
+		//if(isBetterLocation(location,currentBestLocation)){
+			currentBestLocation=location;		
+			updateMyLocation(location.getLatitude(),location.getLongitude(),location.getAltitude(),location.getTime(),location.getAccuracy(),DBContract.PROVIDER_GOOGLE);
+		//}
+	}
+
+	@Override
+	public void onStatusChanged(String provider, int status, Bundle extras) {
+		//Log.d(TAG,	"onStatusChanged status=" + status + " extras="	+ extras.toString());
+	}
+
+	@Override
+	public void onProviderEnabled(String provider) {
+		Log.d(TAG, "onProviderEnabled provider=" + provider);
+	}
+
+	@Override
+	public void onProviderDisabled(String provider) {
+		Log.d(TAG, "onProviderDisabled provider=" + provider);
+	}
+
+//-------------------Google algorithms------------------------------
+
+	 private static final int TWO_MINUTES = 1000 * 60 * 2;
+	 private Location currentBestLocation=null;//Вспомогательная переменная для isBetterLocation
+	 
+	 protected boolean isBetterLocation(Location location, Location currentBestLocation) {
+		 
+	     if (currentBestLocation == null) {
+	         // A new location is always better than no location
+	         return true;
+	     }
+
+	     // Check whether the new location fix is newer or older
+	     long timeDelta = location.getTime() - currentBestLocation.getTime();
+	     boolean isSignificantlyNewer = timeDelta > TWO_MINUTES;
+	     boolean isSignificantlyOlder = timeDelta < -TWO_MINUTES;
+	     boolean isNewer = timeDelta > 0;
+
+	     // If it's been more than two minutes since the current location, use the new location
+	     // because the user has likely moved
+	     if (isSignificantlyNewer) {
+	         return true;
+	     // If the new location is more than two minutes older, it must be worse
+	     } else if (isSignificantlyOlder) {
+	         return false;
+	     }
+
+	     // Check whether the new location fix is more or less accurate
+	     int accuracyDelta = (int) (location.getAccuracy() - currentBestLocation.getAccuracy());
+	     boolean isLessAccurate = accuracyDelta > 0;
+	     boolean isMoreAccurate = accuracyDelta < 0;
+	     boolean isSignificantlyLessAccurate = accuracyDelta > 200;
+
+	     // Check if the old and new location are from the same provider
+	     boolean isFromSameProvider = isSameProvider(location.getProvider(),
+	             currentBestLocation.getProvider());
+
+	     // Determine location quality using a combination of timeliness and accuracy
+	     if (isMoreAccurate) {
+	         return true;
+	     } else if (isNewer && !isLessAccurate) {
+	         return true;
+	     } else if (isNewer && !isSignificantlyLessAccurate && isFromSameProvider) {
+	         return true;
+	     }
+	     
+	     return false;	     
+	 }
+
+	 private boolean isSameProvider(String provider1, String provider2) {
+		 
+	     if (provider1 == null) {
+	       return provider2 == null;
+	     }
+	     
+	     return provider1.equals(provider2);
+	     
+	 }
+	 
+	 
+}

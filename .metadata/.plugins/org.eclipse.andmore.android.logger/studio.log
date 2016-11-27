@@ -1,0 +1,369 @@
+2016-11-26 12:04:49,648 [Worker-8] DEBUG class java.lang.Class - Starting Andmore Common Plugin...
+2016-11-26 12:04:49,648 [Worker-8] DEBUG class java.lang.Class - Andmore Common Plugin started.
+2016-11-26 12:04:49,648 [Worker-8] DEBUG class java.lang.Class - Starting Andmore Plugin...
+2016-11-26 12:04:49,658 [Worker-8] DEBUG class java.lang.Class - Andmore Plugin started.
+2016-11-26 12:04:49,718 [Worker-8] DEBUG class java.lang.Class - Starting Andmore Emulator Plugin...
+2016-11-26 12:04:49,778 [Worker-8] DEBUG class java.lang.Class - Andmore Emulator Plugin started.
+2016-11-26 12:05:23,571 [Worker-8] DEBUG class java.lang.Class - Starting Andmore Device Services Plugin...
+2016-11-26 12:05:23,571 [Worker-8] DEBUG class java.lang.Class - Andmore Device Services Plugin started.
+2016-11-26 12:05:23,687 [Worker-8] DEBUG class java.lang.Class - Starting Andmore Handset Plugin...
+2016-11-26 12:05:23,687 [Worker-8] DEBUG class java.lang.Class - Andmore Handset Plugin started.
+2016-11-26 12:05:23,703 [Worker-8] DEBUG class java.lang.Class - Starting Andmore Remote Device Plugin...
+2016-11-26 12:05:23,704 [Worker-8] DEBUG class java.lang.Class - Starting Andmore Remote Device Plugin started.
+2016-11-26 12:05:23,732 [Worker-8] ERROR Studio for Android - Handler could not be instanced(PLUGIN=org.eclipse.sequoyah.device.framework;ERROR=202)
+2016-11-26 12:05:23,732 [Worker-8] ERROR Studio for Android - Handler could not be instanced(PLUGIN=org.eclipse.sequoyah.device.framework;ERROR=202)
+2016-11-26 12:05:23,733 [Worker-8] ERROR Studio for Android - Handler could not be instanced(PLUGIN=org.eclipse.sequoyah.device.framework;ERROR=202)
+2016-11-26 12:05:23,733 [Worker-8] ERROR Studio for Android - Handler could not be instanced(PLUGIN=org.eclipse.sequoyah.device.framework;ERROR=202)
+2016-11-26 12:05:23,733 [Worker-8] ERROR Studio for Android - Handler could not be instanced(PLUGIN=org.eclipse.sequoyah.device.framework;ERROR=202)
+2016-11-26 12:05:23,733 [Worker-8] ERROR Studio for Android - Handler could not be instanced(PLUGIN=org.eclipse.sequoyah.device.framework;ERROR=202)
+2016-11-26 12:05:23,734 [Worker-8] ERROR Studio for Android - Handler could not be instanced(PLUGIN=org.eclipse.sequoyah.device.framework;ERROR=202)
+2016-11-26 12:05:23,734 [Worker-8] ERROR Studio for Android - Handler could not be instanced(PLUGIN=org.eclipse.sequoyah.device.framework;ERROR=202)
+2016-11-26 12:05:23,734 [Worker-8] ERROR Studio for Android - Handler could not be instanced(PLUGIN=org.eclipse.sequoyah.device.framework;ERROR=202)
+2016-11-26 12:05:23,734 [Worker-8] ERROR Studio for Android - Handler could not be instanced(PLUGIN=org.eclipse.sequoyah.device.framework;ERROR=202)
+2016-11-26 12:05:23,735 [Worker-8] ERROR Studio for Android - Handler could not be instanced(PLUGIN=org.eclipse.sequoyah.device.framework;ERROR=202)
+2016-11-26 12:05:23,735 [Worker-8] ERROR Studio for Android - Handler could not be instanced(PLUGIN=org.eclipse.sequoyah.device.framework;ERROR=202)
+2016-11-26 12:05:23,735 [Worker-8] ERROR Studio for Android - Handler could not be instanced(PLUGIN=org.eclipse.sequoyah.device.framework;ERROR=202)
+2016-11-26 12:05:23,735 [Worker-8] ERROR Studio for Android - Handler could not be instanced(PLUGIN=org.eclipse.sequoyah.device.framework;ERROR=202)
+2016-11-26 12:05:23,735 [Worker-8] ERROR Studio for Android - Handler could not be instanced(PLUGIN=org.eclipse.sequoyah.device.framework;ERROR=202)
+2016-11-26 12:05:23,736 [Worker-8] ERROR Studio for Android - Handler could not be instanced(PLUGIN=org.eclipse.sequoyah.device.framework;ERROR=202)
+2016-11-26 12:05:23,736 [Worker-8] ERROR Studio for Android - Handler could not be instanced(PLUGIN=org.eclipse.sequoyah.device.framework;ERROR=202)
+2016-11-26 12:05:23,736 [Worker-8] ERROR Studio for Android - Handler could not be instanced(PLUGIN=org.eclipse.sequoyah.device.framework;ERROR=202)
+2016-11-26 12:05:23,736 [Worker-8] ERROR Studio for Android - Handler could not be instanced(PLUGIN=org.eclipse.sequoyah.device.framework;ERROR=202)
+2016-11-26 12:05:23,736 [Worker-8] ERROR Studio for Android - Handler could not be instanced(PLUGIN=org.eclipse.sequoyah.device.framework;ERROR=202)
+2016-11-26 12:05:23,737 [Worker-8] ERROR Studio for Android - Handler could not be instanced(PLUGIN=org.eclipse.sequoyah.device.framework;ERROR=202)
+2016-11-26 12:05:23,737 [Worker-8] ERROR Studio for Android - Handler could not be instanced(PLUGIN=org.eclipse.sequoyah.device.framework;ERROR=202)
+2016-11-26 12:05:23,737 [Worker-8] ERROR Studio for Android - Handler could not be instanced(PLUGIN=org.eclipse.sequoyah.device.framework;ERROR=202)
+2016-11-26 12:05:23,737 [Worker-8] ERROR Studio for Android - Handler could not be instanced(PLUGIN=org.eclipse.sequoyah.device.framework;ERROR=202)
+2016-11-26 12:05:23,738 [Worker-8] ERROR Studio for Android - Handler could not be instanced(PLUGIN=org.eclipse.sequoyah.device.framework;ERROR=202)
+2016-11-26 12:05:23,738 [Worker-8] ERROR Studio for Android - Handler could not be instanced(PLUGIN=org.eclipse.sequoyah.device.framework;ERROR=202)
+2016-11-26 12:05:23,738 [Worker-8] ERROR Studio for Android - Handler could not be instanced(PLUGIN=org.eclipse.sequoyah.device.framework;ERROR=202)
+2016-11-26 12:05:23,739 [Worker-8] ERROR Studio for Android - Handler could not be instanced(PLUGIN=org.eclipse.sequoyah.device.framework;ERROR=202)
+2016-11-26 12:05:23,739 [Worker-8] ERROR Studio for Android - Handler could not be instanced(PLUGIN=org.eclipse.sequoyah.device.framework;ERROR=202)
+2016-11-26 12:05:23,739 [Worker-8] ERROR Studio for Android - Handler could not be instanced(PLUGIN=org.eclipse.sequoyah.device.framework;ERROR=202)
+2016-11-26 12:05:23,739 [Worker-8] INFO  Studio for Android - [Status: id=org.eclipse.andmore.android.emulator.status.offline;name=Offline]
+2016-11-26 12:05:23,739 [Worker-8] INFO  Studio for Android - [Status: id=org.eclipse.andmore.android.handset.status.handsetonline;name=Online]
+2016-11-26 12:05:23,739 [Worker-8] INFO  Studio for Android - [Status: id=INACTIVE;name=INACTIVE]
+2016-11-26 12:05:23,739 [Worker-8] INFO  Studio for Android - [Status: id=org.eclipse.andmore.android.emulator.status.notavailable;name=Not available]
+2016-11-26 12:05:23,739 [Worker-8] INFO  Studio for Android - [Status: id=IDLE;name=IDLE]
+2016-11-26 12:05:23,739 [Worker-8] INFO  Studio for Android - [Status: id=org.eclipse.andmore.android.remote.status.connected;name=Connected]
+2016-11-26 12:05:23,739 [Worker-8] INFO  Studio for Android - [Status: id=org.eclipse.andmore.android.remote.status.disconnected;name=Disconnected]
+2016-11-26 12:05:23,739 [Worker-8] INFO  Studio for Android - [Status: id=org.eclipse.andmore.android.emulator.status.online;name=Online]
+2016-11-26 12:05:23,739 [Worker-8] INFO  Studio for Android - [Status: id=OFF;name=OFF]
+2016-11-26 12:05:23,740 [Worker-8] INFO  Studio for Android - [Status: id=org.eclipse.andmore.android.emulator.status.offlineNoData;name=Offline (no user data)]
+2016-11-26 12:05:41,831 [Worker-8] DEBUG class org.eclipse.andmore.android.AndroidPlugin - Notify SDK loader listeners
+2016-11-26 13:54:47,969 [main] DEBUG class java.lang.Class - Starting Eclipse Andmore Database Core Plugin...
+2016-11-26 13:54:48,116 [main] DEBUG Studio for Android - JDBC Driver Location:bundleentry://69.fwk14040507/res/androidjdbc.jar JDBC Driver getBundle().getLocation():reference:file:plugins/org.eclipse.andmore.android.common_0.5.0.201605181018.jar
+2016-11-26 13:54:48,137 [main] DEBUG Studio for Android - JDBC Driver Path:D:\Install\programming\eclipse-android-neon-1a-incubation-win32\eclipse\configuration\org.eclipse.osgi\69\0\.cp\res\androidjdbc.jar
+2016-11-26 13:54:48,137 [main] DEBUG Studio for Android - JDBC Driver Location:bundleentry://69.fwk14040507/res/androidjdbc.jar JDBC Driver getBundle().getLocation():reference:file:plugins/org.eclipse.andmore.android.common_0.5.0.201605181018.jar
+2016-11-26 13:54:48,138 [main] DEBUG Studio for Android - JDBC Driver Path:D:\Install\programming\eclipse-android-neon-1a-incubation-win32\eclipse\configuration\org.eclipse.osgi\69\0\.cp\res\androidjdbc.jar
+2016-11-26 13:54:48,182 [main] INFO  Studio for Android - Created a JDBC driver instance at Data Tools.
+2016-11-26 13:54:48,288 [main] DEBUG class java.lang.Class - Eclipse Andmore Database Core Plugin started.
+2016-11-26 13:54:48,290 [main] DEBUG class java.lang.Class - Starting Eclipse Andmore Database Devices Support Plugin...
+2016-11-26 13:54:48,294 [main] DEBUG class java.lang.Class - Eclipse Andmore Database Devices Support Plugin started...
+2016-11-26 13:54:49,496 [Framework stop] DEBUG Studio for Android - org.eclipse.sequoyah.device.service.start.StartServicePlugin-SHUTDOWN
+2016-11-26 13:54:49,558 [Framework stop] DEBUG Studio for Android - org.eclipse.sequoyah.device.framework.ui.DeviceUIPlugin-SHUTDOWN
+2016-11-26 13:54:49,559 [Framework stop] DEBUG Studio for Android - org.eclipse.sequoyah.device.service.stop.StopServicePlugin-SHUTDOWN
+2016-11-26 13:54:49,559 [Framework stop] DEBUG Studio for Android - org.eclipse.sequoyah.device.framework.DevicePlugin-SHUTDOWN
+2016-11-26 16:44:17,704 [Worker-10] DEBUG class java.lang.Class - Starting Andmore Common Plugin...
+2016-11-26 16:44:17,725 [Worker-10] DEBUG class java.lang.Class - Andmore Common Plugin started.
+2016-11-26 16:44:17,725 [Worker-10] DEBUG class java.lang.Class - Starting Andmore Plugin...
+2016-11-26 16:44:17,786 [Worker-10] DEBUG class java.lang.Class - Andmore Plugin started.
+2016-11-26 16:44:17,998 [Worker-10] DEBUG class java.lang.Class - Starting Andmore Emulator Plugin...
+2016-11-26 16:44:18,182 [Worker-10] DEBUG class java.lang.Class - Andmore Emulator Plugin started.
+2016-11-26 16:44:28,526 [Worker-10] DEBUG class java.lang.Class - Starting Andmore Device Services Plugin...
+2016-11-26 16:44:28,528 [Worker-10] DEBUG class java.lang.Class - Andmore Device Services Plugin started.
+2016-11-26 16:44:28,613 [Worker-10] DEBUG class java.lang.Class - Starting Andmore Handset Plugin...
+2016-11-26 16:44:28,613 [Worker-10] DEBUG class java.lang.Class - Andmore Handset Plugin started.
+2016-11-26 16:44:28,695 [Worker-10] DEBUG class java.lang.Class - Starting Andmore Remote Device Plugin...
+2016-11-26 16:44:28,696 [Worker-10] DEBUG class java.lang.Class - Starting Andmore Remote Device Plugin started.
+2016-11-26 16:44:28,795 [Worker-10] ERROR Studio for Android - Handler could not be instanced(PLUGIN=org.eclipse.sequoyah.device.framework;ERROR=202)
+2016-11-26 16:44:28,795 [Worker-10] ERROR Studio for Android - Handler could not be instanced(PLUGIN=org.eclipse.sequoyah.device.framework;ERROR=202)
+2016-11-26 16:44:28,798 [Worker-10] ERROR Studio for Android - Handler could not be instanced(PLUGIN=org.eclipse.sequoyah.device.framework;ERROR=202)
+2016-11-26 16:44:28,798 [Worker-10] ERROR Studio for Android - Handler could not be instanced(PLUGIN=org.eclipse.sequoyah.device.framework;ERROR=202)
+2016-11-26 16:44:28,798 [Worker-10] ERROR Studio for Android - Handler could not be instanced(PLUGIN=org.eclipse.sequoyah.device.framework;ERROR=202)
+2016-11-26 16:44:28,798 [Worker-10] ERROR Studio for Android - Handler could not be instanced(PLUGIN=org.eclipse.sequoyah.device.framework;ERROR=202)
+2016-11-26 16:44:28,799 [Worker-10] ERROR Studio for Android - Handler could not be instanced(PLUGIN=org.eclipse.sequoyah.device.framework;ERROR=202)
+2016-11-26 16:44:28,799 [Worker-10] ERROR Studio for Android - Handler could not be instanced(PLUGIN=org.eclipse.sequoyah.device.framework;ERROR=202)
+2016-11-26 16:44:28,799 [Worker-10] ERROR Studio for Android - Handler could not be instanced(PLUGIN=org.eclipse.sequoyah.device.framework;ERROR=202)
+2016-11-26 16:44:28,799 [Worker-10] ERROR Studio for Android - Handler could not be instanced(PLUGIN=org.eclipse.sequoyah.device.framework;ERROR=202)
+2016-11-26 16:44:28,800 [Worker-10] ERROR Studio for Android - Handler could not be instanced(PLUGIN=org.eclipse.sequoyah.device.framework;ERROR=202)
+2016-11-26 16:44:28,800 [Worker-10] ERROR Studio for Android - Handler could not be instanced(PLUGIN=org.eclipse.sequoyah.device.framework;ERROR=202)
+2016-11-26 16:44:28,800 [Worker-10] ERROR Studio for Android - Handler could not be instanced(PLUGIN=org.eclipse.sequoyah.device.framework;ERROR=202)
+2016-11-26 16:44:28,800 [Worker-10] ERROR Studio for Android - Handler could not be instanced(PLUGIN=org.eclipse.sequoyah.device.framework;ERROR=202)
+2016-11-26 16:44:28,801 [Worker-10] ERROR Studio for Android - Handler could not be instanced(PLUGIN=org.eclipse.sequoyah.device.framework;ERROR=202)
+2016-11-26 16:44:28,801 [Worker-10] ERROR Studio for Android - Handler could not be instanced(PLUGIN=org.eclipse.sequoyah.device.framework;ERROR=202)
+2016-11-26 16:44:28,801 [Worker-10] ERROR Studio for Android - Handler could not be instanced(PLUGIN=org.eclipse.sequoyah.device.framework;ERROR=202)
+2016-11-26 16:44:28,801 [Worker-10] ERROR Studio for Android - Handler could not be instanced(PLUGIN=org.eclipse.sequoyah.device.framework;ERROR=202)
+2016-11-26 16:44:28,801 [Worker-10] ERROR Studio for Android - Handler could not be instanced(PLUGIN=org.eclipse.sequoyah.device.framework;ERROR=202)
+2016-11-26 16:44:28,801 [Worker-10] ERROR Studio for Android - Handler could not be instanced(PLUGIN=org.eclipse.sequoyah.device.framework;ERROR=202)
+2016-11-26 16:44:28,801 [Worker-10] ERROR Studio for Android - Handler could not be instanced(PLUGIN=org.eclipse.sequoyah.device.framework;ERROR=202)
+2016-11-26 16:44:28,802 [Worker-10] ERROR Studio for Android - Handler could not be instanced(PLUGIN=org.eclipse.sequoyah.device.framework;ERROR=202)
+2016-11-26 16:44:28,802 [Worker-10] ERROR Studio for Android - Handler could not be instanced(PLUGIN=org.eclipse.sequoyah.device.framework;ERROR=202)
+2016-11-26 16:44:28,802 [Worker-10] ERROR Studio for Android - Handler could not be instanced(PLUGIN=org.eclipse.sequoyah.device.framework;ERROR=202)
+2016-11-26 16:44:28,802 [Worker-10] ERROR Studio for Android - Handler could not be instanced(PLUGIN=org.eclipse.sequoyah.device.framework;ERROR=202)
+2016-11-26 16:44:28,802 [Worker-10] ERROR Studio for Android - Handler could not be instanced(PLUGIN=org.eclipse.sequoyah.device.framework;ERROR=202)
+2016-11-26 16:44:28,802 [Worker-10] ERROR Studio for Android - Handler could not be instanced(PLUGIN=org.eclipse.sequoyah.device.framework;ERROR=202)
+2016-11-26 16:44:28,802 [Worker-10] ERROR Studio for Android - Handler could not be instanced(PLUGIN=org.eclipse.sequoyah.device.framework;ERROR=202)
+2016-11-26 16:44:28,802 [Worker-10] ERROR Studio for Android - Handler could not be instanced(PLUGIN=org.eclipse.sequoyah.device.framework;ERROR=202)
+2016-11-26 16:44:28,803 [Worker-10] ERROR Studio for Android - Handler could not be instanced(PLUGIN=org.eclipse.sequoyah.device.framework;ERROR=202)
+2016-11-26 16:44:28,803 [Worker-10] INFO  Studio for Android - [Status: id=org.eclipse.andmore.android.emulator.status.offline;name=Offline]
+2016-11-26 16:44:28,803 [Worker-10] INFO  Studio for Android - [Status: id=org.eclipse.andmore.android.handset.status.handsetonline;name=Online]
+2016-11-26 16:44:28,803 [Worker-10] INFO  Studio for Android - [Status: id=INACTIVE;name=INACTIVE]
+2016-11-26 16:44:28,803 [Worker-10] INFO  Studio for Android - [Status: id=org.eclipse.andmore.android.emulator.status.notavailable;name=Not available]
+2016-11-26 16:44:28,803 [Worker-10] INFO  Studio for Android - [Status: id=IDLE;name=IDLE]
+2016-11-26 16:44:28,803 [Worker-10] INFO  Studio for Android - [Status: id=org.eclipse.andmore.android.remote.status.connected;name=Connected]
+2016-11-26 16:44:28,803 [Worker-10] INFO  Studio for Android - [Status: id=org.eclipse.andmore.android.remote.status.disconnected;name=Disconnected]
+2016-11-26 16:44:28,803 [Worker-10] INFO  Studio for Android - [Status: id=org.eclipse.andmore.android.emulator.status.online;name=Online]
+2016-11-26 16:44:28,803 [Worker-10] INFO  Studio for Android - [Status: id=OFF;name=OFF]
+2016-11-26 16:44:28,803 [Worker-10] INFO  Studio for Android - [Status: id=org.eclipse.andmore.android.emulator.status.offlineNoData;name=Offline (no user data)]
+2016-11-26 16:44:41,513 [Worker-21] DEBUG class org.eclipse.andmore.android.AndroidPlugin - Notify SDK loader listeners
+2016-11-26 18:10:02,282 [Device List Monitor] DEBUG Studio for Android - Device connected: 2a23882
+2016-11-26 18:10:19,100 [Device List Monitor] DEBUG Studio for Android - Device changed: 2a23882
+2016-11-26 18:22:06,627 [Device List Monitor] DEBUG Studio for Android - Device disconnected: 2a23882
+2016-11-26 18:22:24,127 [Device List Monitor] DEBUG Studio for Android - Device disconnected: 2a23882
+2016-11-26 20:51:44,078 [Device List Monitor] DEBUG Studio for Android - Device connected: 2a23882
+2016-11-26 20:51:54,181 [Device List Monitor] DEBUG Studio for Android - Device changed: 2a23882
+2016-11-26 20:56:33,890 [Device List Monitor] DEBUG Studio for Android - Device disconnected: 2a23882
+2016-11-26 20:56:36,161 [Device List Monitor] DEBUG Studio for Android - Device connected: 2a23882
+2016-11-26 20:56:46,978 [Device List Monitor] DEBUG Studio for Android - Device changed: 2a23882
+2016-11-26 20:57:34,726 [Device List Monitor] DEBUG Studio for Android - Device disconnected: 2a23882
+2016-11-26 20:57:36,122 [Device List Monitor] DEBUG Studio for Android - Device connected: 2a23882
+2016-11-26 20:57:46,198 [Device List Monitor] DEBUG Studio for Android - Device changed: 2a23882
+2016-11-26 21:15:17,997 [Device List Monitor] DEBUG Studio for Android - Device disconnected: 2a23882
+2016-11-26 23:43:27,311 [Device List Monitor] DEBUG Studio for Android - Device connected: 2a23882
+2016-11-26 23:43:37,635 [Device List Monitor] DEBUG Studio for Android - Device changed: 2a23882
+2016-11-26 23:43:47,303 [Device List Monitor] DEBUG Studio for Android - Device disconnected: 2a23882
+2016-11-26 23:43:50,458 [Device List Monitor] DEBUG Studio for Android - Device connected: 2a23882
+2016-11-26 23:44:00,631 [Device List Monitor] DEBUG Studio for Android - Device changed: 2a23882
+2016-11-27 00:36:44,802 [Device List Monitor] DEBUG Studio for Android - Device disconnected: 2a23882
+2016-11-27 01:43:31,229 [Device List Monitor] DEBUG Studio for Android - Device connected: 2a23882
+2016-11-27 01:43:41,313 [Device List Monitor] ERROR class org.eclipse.andmore.android.DDMSFacade - Error executing shell command getprop at device 2a23882
+com.android.ddmlib.AdbCommandRejectedException: device offline
+	at com.android.ddmlib.AdbHelper.setDevice(AdbHelper.java:861)
+	at com.android.ddmlib.AdbHelper.executeRemoteCommand(AdbHelper.java:450)
+	at com.android.ddmlib.AdbHelper.executeRemoteCommand(AdbHelper.java:381)
+	at com.android.ddmlib.AdbHelper.executeRemoteCommand(AdbHelper.java:352)
+	at com.android.ddmlib.Device.executeShellCommand(Device.java:613)
+	at org.eclipse.andmore.android.DDMSFacade.executeShellCmd(DDMSFacade.java:814)
+	at org.eclipse.andmore.android.DDMSFacade.execRemoteApp(DDMSFacade.java:781)
+	at org.eclipse.andmore.android.DDMSFacade.getDeviceProperties(DDMSFacade.java:851)
+	at org.eclipse.andmore.android.handset.HandsetPlugin.createInstance(HandsetPlugin.java:126)
+	at org.eclipse.andmore.android.handset.HandsetPlugin.access$0(HandsetPlugin.java:122)
+	at org.eclipse.andmore.android.handset.HandsetPlugin$2.run(HandsetPlugin.java:61)
+	at org.eclipse.andmore.android.AndmoreEventManager$7.run(AndmoreEventManager.java:172)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.andmore.android.AndmoreEventManager.fireEvent(AndmoreEventManager.java:169)
+	at org.eclipse.andmore.android.DDMSFacade.deviceConnected(DDMSFacade.java:342)
+	at org.eclipse.andmore.android.AndmoreDeviceChangeListener.deviceChanged(AndmoreDeviceChangeListener.java:67)
+	at com.android.ddmlib.AndroidDebugBridge.deviceChanged(AndroidDebugBridge.java:841)
+	at com.android.ddmlib.Device.update(Device.java:762)
+	at com.android.ddmlib.DeviceMonitor.updateDevices(DeviceMonitor.java:194)
+	at com.android.ddmlib.DeviceMonitor.access$500(DeviceMonitor.java:64)
+	at com.android.ddmlib.DeviceMonitor$DeviceListUpdateListener.deviceListUpdate(DeviceMonitor.java:653)
+	at com.android.ddmlib.DeviceMonitor$DeviceListMonitorTask.processIncomingDeviceData(DeviceMonitor.java:838)
+	at com.android.ddmlib.DeviceMonitor$DeviceListMonitorTask.run(DeviceMonitor.java:772)
+	at java.lang.Thread.run(Unknown Source)
+2016-11-27 01:43:41,320 [Device List Monitor] DEBUG Studio for Android - Device changed: 2a23882
+2016-11-27 01:43:41,334 [Device List Monitor] DEBUG Studio for Android - Device disconnected: 2a23882
+2016-11-27 01:43:45,722 [Device List Monitor] DEBUG Studio for Android - Device disconnected: 2a23882
+2016-11-27 01:43:57,138 [Device List Monitor] DEBUG Studio for Android - Device connected: 2a23882
+2016-11-27 01:44:07,217 [Device List Monitor] DEBUG Studio for Android - Device changed: 2a23882
+2016-11-27 02:49:56,270 [Device List Monitor] DEBUG Studio for Android - Device disconnected: 2a23882
+2016-11-27 03:25:09,042 [Device List Monitor] DEBUG Studio for Android - Device connected: 2a23882
+2016-11-27 03:25:19,191 [Device List Monitor] DEBUG Studio for Android - Device changed: 2a23882
+2016-11-27 03:33:50,758 [Device List Monitor] DEBUG Studio for Android - Device disconnected: 2a23882
+2016-11-27 03:33:52,978 [Device List Monitor] DEBUG Studio for Android - Device connected: 2a23882
+2016-11-27 03:34:03,084 [Device List Monitor] DEBUG Studio for Android - Device changed: 2a23882
+2016-11-27 04:24:56,397 [Device List Monitor] DEBUG Studio for Android - Device disconnected: 2a23882
+2016-11-27 04:24:57,748 [Device List Monitor] DEBUG Studio for Android - Device connected: 2a23882
+2016-11-27 04:25:07,896 [Device List Monitor] DEBUG Studio for Android - Device changed: 2a23882
+2016-11-27 04:32:47,124 [Device List Monitor] DEBUG Studio for Android - Device disconnected: 2a23882
+2016-11-27 04:32:48,276 [Device List Monitor] DEBUG Studio for Android - Device connected: 2a23882
+2016-11-27 04:32:58,345 [Device List Monitor] ERROR class org.eclipse.andmore.android.DDMSFacade - Error executing shell command getprop at device 2a23882
+com.android.ddmlib.AdbCommandRejectedException: device '2a23882' not found
+	at com.android.ddmlib.AdbHelper.setDevice(AdbHelper.java:861)
+	at com.android.ddmlib.AdbHelper.executeRemoteCommand(AdbHelper.java:450)
+	at com.android.ddmlib.AdbHelper.executeRemoteCommand(AdbHelper.java:381)
+	at com.android.ddmlib.AdbHelper.executeRemoteCommand(AdbHelper.java:352)
+	at com.android.ddmlib.Device.executeShellCommand(Device.java:613)
+	at org.eclipse.andmore.android.DDMSFacade.executeShellCmd(DDMSFacade.java:814)
+	at org.eclipse.andmore.android.DDMSFacade.execRemoteApp(DDMSFacade.java:781)
+	at org.eclipse.andmore.android.DDMSFacade.getDeviceProperties(DDMSFacade.java:851)
+	at org.eclipse.andmore.android.handset.HandsetPlugin.createInstance(HandsetPlugin.java:126)
+	at org.eclipse.andmore.android.handset.HandsetPlugin.access$0(HandsetPlugin.java:122)
+	at org.eclipse.andmore.android.handset.HandsetPlugin$2.run(HandsetPlugin.java:61)
+	at org.eclipse.andmore.android.AndmoreEventManager$7.run(AndmoreEventManager.java:172)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.andmore.android.AndmoreEventManager.fireEvent(AndmoreEventManager.java:169)
+	at org.eclipse.andmore.android.DDMSFacade.deviceConnected(DDMSFacade.java:342)
+	at org.eclipse.andmore.android.AndmoreDeviceChangeListener.deviceChanged(AndmoreDeviceChangeListener.java:67)
+	at com.android.ddmlib.AndroidDebugBridge.deviceChanged(AndroidDebugBridge.java:841)
+	at com.android.ddmlib.Device.update(Device.java:762)
+	at com.android.ddmlib.DeviceMonitor.updateDevices(DeviceMonitor.java:194)
+	at com.android.ddmlib.DeviceMonitor.access$500(DeviceMonitor.java:64)
+	at com.android.ddmlib.DeviceMonitor$DeviceListUpdateListener.deviceListUpdate(DeviceMonitor.java:653)
+	at com.android.ddmlib.DeviceMonitor$DeviceListMonitorTask.processIncomingDeviceData(DeviceMonitor.java:838)
+	at com.android.ddmlib.DeviceMonitor$DeviceListMonitorTask.run(DeviceMonitor.java:772)
+	at java.lang.Thread.run(Unknown Source)
+2016-11-27 04:32:58,351 [Device List Monitor] DEBUG Studio for Android - Device changed: 2a23882
+2016-11-27 04:32:58,379 [Device List Monitor] DEBUG Studio for Android - Device disconnected: 2a23882
+2016-11-27 04:32:58,383 [Device List Monitor] DEBUG Studio for Android - Device connected: 2a23882
+2016-11-27 04:33:08,390 [Device List Monitor] ERROR class org.eclipse.andmore.android.DDMSFacade - Error executing shell command getprop at device 2a23882
+com.android.ddmlib.AdbCommandRejectedException: device '2a23882' not found
+	at com.android.ddmlib.AdbHelper.setDevice(AdbHelper.java:861)
+	at com.android.ddmlib.AdbHelper.executeRemoteCommand(AdbHelper.java:450)
+	at com.android.ddmlib.AdbHelper.executeRemoteCommand(AdbHelper.java:381)
+	at com.android.ddmlib.AdbHelper.executeRemoteCommand(AdbHelper.java:352)
+	at com.android.ddmlib.Device.executeShellCommand(Device.java:613)
+	at org.eclipse.andmore.android.DDMSFacade.executeShellCmd(DDMSFacade.java:814)
+	at org.eclipse.andmore.android.DDMSFacade.execRemoteApp(DDMSFacade.java:781)
+	at org.eclipse.andmore.android.DDMSFacade.getDeviceProperties(DDMSFacade.java:851)
+	at org.eclipse.andmore.android.handset.HandsetPlugin.createInstance(HandsetPlugin.java:126)
+	at org.eclipse.andmore.android.handset.HandsetPlugin.access$0(HandsetPlugin.java:122)
+	at org.eclipse.andmore.android.handset.HandsetPlugin$2.run(HandsetPlugin.java:61)
+	at org.eclipse.andmore.android.AndmoreEventManager$7.run(AndmoreEventManager.java:172)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.andmore.android.AndmoreEventManager.fireEvent(AndmoreEventManager.java:169)
+	at org.eclipse.andmore.android.DDMSFacade.deviceConnected(DDMSFacade.java:342)
+	at org.eclipse.andmore.android.AndmoreDeviceChangeListener.deviceChanged(AndmoreDeviceChangeListener.java:67)
+	at com.android.ddmlib.AndroidDebugBridge.deviceChanged(AndroidDebugBridge.java:841)
+	at com.android.ddmlib.Device.update(Device.java:762)
+	at com.android.ddmlib.DeviceMonitor.updateDevices(DeviceMonitor.java:194)
+	at com.android.ddmlib.DeviceMonitor.access$500(DeviceMonitor.java:64)
+	at com.android.ddmlib.DeviceMonitor$DeviceListUpdateListener.deviceListUpdate(DeviceMonitor.java:653)
+	at com.android.ddmlib.DeviceMonitor$DeviceListMonitorTask.processIncomingDeviceData(DeviceMonitor.java:838)
+	at com.android.ddmlib.DeviceMonitor$DeviceListMonitorTask.run(DeviceMonitor.java:772)
+	at java.lang.Thread.run(Unknown Source)
+2016-11-27 04:33:08,394 [Device List Monitor] DEBUG Studio for Android - Device changed: 2a23882
+2016-11-27 04:33:08,397 [Device List Monitor] DEBUG Studio for Android - Device disconnected: 2a23882
+2016-11-27 04:33:08,401 [Device List Monitor] DEBUG Studio for Android - Device connected: MZQCEUNRTGYD5H89
+2016-11-27 04:33:18,473 [Device List Monitor] DEBUG Studio for Android - Device changed: MZQCEUNRTGYD5H89
+2016-11-27 04:37:05,337 [Device List Monitor] DEBUG Studio for Android - Device disconnected: MZQCEUNRTGYD5H89
+2016-11-27 04:37:11,611 [Device List Monitor] DEBUG Studio for Android - Device connected: 2a23882
+2016-11-27 04:37:21,690 [Device List Monitor] DEBUG Studio for Android - Device changed: 2a23882
+2016-11-27 04:44:13,267 [Device List Monitor] DEBUG Studio for Android - Device disconnected: 2a23882
+2016-11-27 04:44:15,201 [Device List Monitor] DEBUG Studio for Android - Device connected: 2a23882
+2016-11-27 04:44:25,297 [Device List Monitor] DEBUG Studio for Android - Device changed: 2a23882
+2016-11-27 07:24:37,324 [Device List Monitor] DEBUG Studio for Android - Device disconnected: 2a23882
+2016-11-27 07:24:58,079 [Device List Monitor] DEBUG Studio for Android - Device connected: MZQCEUNRTGYD5H89
+2016-11-27 07:25:08,341 [Device List Monitor] DEBUG Studio for Android - Device changed: MZQCEUNRTGYD5H89
+2016-11-27 07:38:50,863 [Device List Monitor] DEBUG Studio for Android - Device disconnected: MZQCEUNRTGYD5H89
+2016-11-27 07:48:34,708 [Device List Monitor] DEBUG Studio for Android - Device connected: 2a23882
+2016-11-27 07:48:44,921 [Device List Monitor] DEBUG Studio for Android - Device changed: 2a23882
+2016-11-27 07:49:54,202 [Device List Monitor] DEBUG Studio for Android - Device disconnected: 2a23882
+2016-11-27 11:51:28,042 [Worker-9] DEBUG class java.lang.Class - Starting Andmore Common Plugin...
+2016-11-27 11:51:28,062 [Worker-9] DEBUG class java.lang.Class - Andmore Common Plugin started.
+2016-11-27 11:51:28,062 [Worker-9] DEBUG class java.lang.Class - Starting Andmore Plugin...
+2016-11-27 11:51:28,072 [Worker-9] DEBUG class java.lang.Class - Andmore Plugin started.
+2016-11-27 11:51:28,182 [Worker-9] DEBUG class java.lang.Class - Starting Andmore Emulator Plugin...
+2016-11-27 11:51:28,232 [Worker-9] DEBUG class java.lang.Class - Andmore Emulator Plugin started.
+2016-11-27 11:51:51,782 [Worker-9] DEBUG class java.lang.Class - Starting Andmore Device Services Plugin...
+2016-11-27 11:51:51,782 [Worker-9] DEBUG class java.lang.Class - Andmore Device Services Plugin started.
+2016-11-27 11:51:51,832 [Worker-9] DEBUG class java.lang.Class - Starting Andmore Handset Plugin...
+2016-11-27 11:51:51,832 [Worker-9] DEBUG class java.lang.Class - Andmore Handset Plugin started.
+2016-11-27 11:51:51,852 [Worker-9] DEBUG class java.lang.Class - Starting Andmore Remote Device Plugin...
+2016-11-27 11:51:51,852 [Worker-9] DEBUG class java.lang.Class - Starting Andmore Remote Device Plugin started.
+2016-11-27 11:51:51,902 [Worker-9] ERROR Studio for Android - Handler could not be instanced(PLUGIN=org.eclipse.sequoyah.device.framework;ERROR=202)
+2016-11-27 11:51:51,902 [Worker-9] ERROR Studio for Android - Handler could not be instanced(PLUGIN=org.eclipse.sequoyah.device.framework;ERROR=202)
+2016-11-27 11:51:51,902 [Worker-9] ERROR Studio for Android - Handler could not be instanced(PLUGIN=org.eclipse.sequoyah.device.framework;ERROR=202)
+2016-11-27 11:51:51,902 [Worker-9] ERROR Studio for Android - Handler could not be instanced(PLUGIN=org.eclipse.sequoyah.device.framework;ERROR=202)
+2016-11-27 11:51:51,902 [Worker-9] ERROR Studio for Android - Handler could not be instanced(PLUGIN=org.eclipse.sequoyah.device.framework;ERROR=202)
+2016-11-27 11:51:51,902 [Worker-9] ERROR Studio for Android - Handler could not be instanced(PLUGIN=org.eclipse.sequoyah.device.framework;ERROR=202)
+2016-11-27 11:51:51,902 [Worker-9] ERROR Studio for Android - Handler could not be instanced(PLUGIN=org.eclipse.sequoyah.device.framework;ERROR=202)
+2016-11-27 11:51:51,902 [Worker-9] ERROR Studio for Android - Handler could not be instanced(PLUGIN=org.eclipse.sequoyah.device.framework;ERROR=202)
+2016-11-27 11:51:51,902 [Worker-9] ERROR Studio for Android - Handler could not be instanced(PLUGIN=org.eclipse.sequoyah.device.framework;ERROR=202)
+2016-11-27 11:51:51,902 [Worker-9] ERROR Studio for Android - Handler could not be instanced(PLUGIN=org.eclipse.sequoyah.device.framework;ERROR=202)
+2016-11-27 11:51:51,902 [Worker-9] ERROR Studio for Android - Handler could not be instanced(PLUGIN=org.eclipse.sequoyah.device.framework;ERROR=202)
+2016-11-27 11:51:51,902 [Worker-9] ERROR Studio for Android - Handler could not be instanced(PLUGIN=org.eclipse.sequoyah.device.framework;ERROR=202)
+2016-11-27 11:51:51,902 [Worker-9] ERROR Studio for Android - Handler could not be instanced(PLUGIN=org.eclipse.sequoyah.device.framework;ERROR=202)
+2016-11-27 11:51:51,902 [Worker-9] ERROR Studio for Android - Handler could not be instanced(PLUGIN=org.eclipse.sequoyah.device.framework;ERROR=202)
+2016-11-27 11:51:51,902 [Worker-9] ERROR Studio for Android - Handler could not be instanced(PLUGIN=org.eclipse.sequoyah.device.framework;ERROR=202)
+2016-11-27 11:51:51,902 [Worker-9] ERROR Studio for Android - Handler could not be instanced(PLUGIN=org.eclipse.sequoyah.device.framework;ERROR=202)
+2016-11-27 11:51:51,902 [Worker-9] ERROR Studio for Android - Handler could not be instanced(PLUGIN=org.eclipse.sequoyah.device.framework;ERROR=202)
+2016-11-27 11:51:51,902 [Worker-9] ERROR Studio for Android - Handler could not be instanced(PLUGIN=org.eclipse.sequoyah.device.framework;ERROR=202)
+2016-11-27 11:51:51,902 [Worker-9] ERROR Studio for Android - Handler could not be instanced(PLUGIN=org.eclipse.sequoyah.device.framework;ERROR=202)
+2016-11-27 11:51:51,902 [Worker-9] ERROR Studio for Android - Handler could not be instanced(PLUGIN=org.eclipse.sequoyah.device.framework;ERROR=202)
+2016-11-27 11:51:51,902 [Worker-9] ERROR Studio for Android - Handler could not be instanced(PLUGIN=org.eclipse.sequoyah.device.framework;ERROR=202)
+2016-11-27 11:51:51,902 [Worker-9] ERROR Studio for Android - Handler could not be instanced(PLUGIN=org.eclipse.sequoyah.device.framework;ERROR=202)
+2016-11-27 11:51:51,902 [Worker-9] ERROR Studio for Android - Handler could not be instanced(PLUGIN=org.eclipse.sequoyah.device.framework;ERROR=202)
+2016-11-27 11:51:51,902 [Worker-9] ERROR Studio for Android - Handler could not be instanced(PLUGIN=org.eclipse.sequoyah.device.framework;ERROR=202)
+2016-11-27 11:51:51,902 [Worker-9] ERROR Studio for Android - Handler could not be instanced(PLUGIN=org.eclipse.sequoyah.device.framework;ERROR=202)
+2016-11-27 11:51:51,902 [Worker-9] ERROR Studio for Android - Handler could not be instanced(PLUGIN=org.eclipse.sequoyah.device.framework;ERROR=202)
+2016-11-27 11:51:51,902 [Worker-9] ERROR Studio for Android - Handler could not be instanced(PLUGIN=org.eclipse.sequoyah.device.framework;ERROR=202)
+2016-11-27 11:51:51,902 [Worker-9] ERROR Studio for Android - Handler could not be instanced(PLUGIN=org.eclipse.sequoyah.device.framework;ERROR=202)
+2016-11-27 11:51:51,902 [Worker-9] ERROR Studio for Android - Handler could not be instanced(PLUGIN=org.eclipse.sequoyah.device.framework;ERROR=202)
+2016-11-27 11:51:51,902 [Worker-9] ERROR Studio for Android - Handler could not be instanced(PLUGIN=org.eclipse.sequoyah.device.framework;ERROR=202)
+2016-11-27 11:51:51,902 [Worker-9] INFO  Studio for Android - [Status: id=org.eclipse.andmore.android.emulator.status.offline;name=Offline]
+2016-11-27 11:51:51,902 [Worker-9] INFO  Studio for Android - [Status: id=org.eclipse.andmore.android.handset.status.handsetonline;name=Online]
+2016-11-27 11:51:51,902 [Worker-9] INFO  Studio for Android - [Status: id=INACTIVE;name=INACTIVE]
+2016-11-27 11:51:51,902 [Worker-9] INFO  Studio for Android - [Status: id=org.eclipse.andmore.android.emulator.status.notavailable;name=Not available]
+2016-11-27 11:51:51,902 [Worker-9] INFO  Studio for Android - [Status: id=IDLE;name=IDLE]
+2016-11-27 11:51:51,902 [Worker-9] INFO  Studio for Android - [Status: id=org.eclipse.andmore.android.remote.status.connected;name=Connected]
+2016-11-27 11:51:51,902 [Worker-9] INFO  Studio for Android - [Status: id=org.eclipse.andmore.android.remote.status.disconnected;name=Disconnected]
+2016-11-27 11:51:51,902 [Worker-9] INFO  Studio for Android - [Status: id=org.eclipse.andmore.android.emulator.status.online;name=Online]
+2016-11-27 11:51:51,902 [Worker-9] INFO  Studio for Android - [Status: id=OFF;name=OFF]
+2016-11-27 11:51:51,902 [Worker-9] INFO  Studio for Android - [Status: id=org.eclipse.andmore.android.emulator.status.offlineNoData;name=Offline (no user data)]
+2016-11-27 11:52:09,417 [Worker-7] DEBUG class org.eclipse.andmore.android.AndroidPlugin - Notify SDK loader listeners
+2016-11-27 11:53:39,605 [Device List Monitor] DEBUG Studio for Android - Device connected: 2a23882
+2016-11-27 11:53:50,292 [Device List Monitor] DEBUG Studio for Android - Device changed: 2a23882
+2016-11-27 11:56:19,526 [Device List Monitor] DEBUG Studio for Android - Device disconnected: 2a23882
+2016-11-27 12:26:47,213 [Device List Monitor] DEBUG Studio for Android - Device disconnected: 2a23882
+2016-11-27 12:26:51,633 [Device List Monitor] DEBUG Studio for Android - Device connected: 2a23882
+2016-11-27 12:27:01,807 [Device List Monitor] DEBUG Studio for Android - Device changed: 2a23882
+2016-11-27 12:27:01,852 [Device List Monitor] DEBUG Studio for Android - Device disconnected: 2a23882
+2016-11-27 12:27:01,855 [Device List Monitor] DEBUG Studio for Android - Device connected: 2a23882
+2016-11-27 12:27:12,036 [Device List Monitor] DEBUG Studio for Android - Device changed: 2a23882
+2016-11-27 12:35:39,586 [Device List Monitor] DEBUG Studio for Android - Device disconnected: 2a23882
+2016-11-27 12:35:41,837 [Device List Monitor] DEBUG Studio for Android - Device disconnected: 2a23882
+2016-11-27 12:35:43,283 [Device List Monitor] DEBUG Studio for Android - Device disconnected: 2a23882
+2016-11-27 12:35:44,739 [Device List Monitor] DEBUG Studio for Android - Device connected: 2a23882
+2016-11-27 12:35:54,832 [Device List Monitor] DEBUG Studio for Android - Device changed: 2a23882
+2016-11-27 12:35:57,027 [Device List Monitor] DEBUG Studio for Android - Device disconnected: 2a23882
+2016-11-27 12:35:58,779 [Device List Monitor] DEBUG Studio for Android - Device connected: 2a23882
+2016-11-27 12:36:08,819 [Device List Monitor] ERROR class org.eclipse.andmore.android.DDMSFacade - Error executing shell command getprop at device 2a23882
+com.android.ddmlib.AdbCommandRejectedException: device '2a23882' not found
+	at com.android.ddmlib.AdbHelper.setDevice(AdbHelper.java:861)
+	at com.android.ddmlib.AdbHelper.executeRemoteCommand(AdbHelper.java:450)
+	at com.android.ddmlib.AdbHelper.executeRemoteCommand(AdbHelper.java:381)
+	at com.android.ddmlib.AdbHelper.executeRemoteCommand(AdbHelper.java:352)
+	at com.android.ddmlib.Device.executeShellCommand(Device.java:613)
+	at org.eclipse.andmore.android.DDMSFacade.executeShellCmd(DDMSFacade.java:814)
+	at org.eclipse.andmore.android.DDMSFacade.execRemoteApp(DDMSFacade.java:781)
+	at org.eclipse.andmore.android.DDMSFacade.getDeviceProperties(DDMSFacade.java:851)
+	at org.eclipse.andmore.android.handset.HandsetPlugin.createInstance(HandsetPlugin.java:126)
+	at org.eclipse.andmore.android.handset.HandsetPlugin.access$0(HandsetPlugin.java:122)
+	at org.eclipse.andmore.android.handset.HandsetPlugin$2.run(HandsetPlugin.java:61)
+	at org.eclipse.andmore.android.AndmoreEventManager$7.run(AndmoreEventManager.java:172)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.andmore.android.AndmoreEventManager.fireEvent(AndmoreEventManager.java:169)
+	at org.eclipse.andmore.android.DDMSFacade.deviceConnected(DDMSFacade.java:342)
+	at org.eclipse.andmore.android.AndmoreDeviceChangeListener.deviceChanged(AndmoreDeviceChangeListener.java:67)
+	at com.android.ddmlib.AndroidDebugBridge.deviceChanged(AndroidDebugBridge.java:841)
+	at com.android.ddmlib.Device.update(Device.java:762)
+	at com.android.ddmlib.DeviceMonitor.updateDevices(DeviceMonitor.java:194)
+	at com.android.ddmlib.DeviceMonitor.access$500(DeviceMonitor.java:64)
+	at com.android.ddmlib.DeviceMonitor$DeviceListUpdateListener.deviceListUpdate(DeviceMonitor.java:653)
+	at com.android.ddmlib.DeviceMonitor$DeviceListMonitorTask.processIncomingDeviceData(DeviceMonitor.java:838)
+	at com.android.ddmlib.DeviceMonitor$DeviceListMonitorTask.run(DeviceMonitor.java:772)
+	at java.lang.Thread.run(Unknown Source)
+2016-11-27 12:36:08,829 [Device List Monitor] DEBUG Studio for Android - Device changed: 2a23882
+2016-11-27 12:36:08,829 [Device List Monitor] DEBUG Studio for Android - Device disconnected: 2a23882
+2016-11-27 12:37:32,776 [Device List Monitor] DEBUG Studio for Android - Device connected: MZQCEUNRTGYD5H89
+2016-11-27 12:37:42,901 [Device List Monitor] DEBUG Studio for Android - Device changed: MZQCEUNRTGYD5H89
+2016-11-27 12:40:49,836 [Device List Monitor] DEBUG Studio for Android - Device disconnected: MZQCEUNRTGYD5H89
+2016-11-27 12:42:37,037 [Device List Monitor] DEBUG Studio for Android - Device connected: 42f7401e0688bfaf
+2016-11-27 12:42:47,330 [Device List Monitor] DEBUG Studio for Android - Device changed: 42f7401e0688bfaf
+2016-11-27 12:55:54,807 [Device List Monitor] DEBUG Studio for Android - Device disconnected: 42f7401e0688bfaf
+2016-11-27 12:56:02,787 [Device List Monitor] DEBUG Studio for Android - Device connected: 2a23882
+2016-11-27 12:56:12,872 [Device List Monitor] DEBUG Studio for Android - Device changed: 2a23882
+2016-11-27 12:59:47,662 [Device List Monitor] DEBUG Studio for Android - Device disconnected: 2a23882
+2016-11-27 13:04:01,412 [Device List Monitor] DEBUG Studio for Android - Device disconnected: 2a23882
+2016-11-27 13:04:12,942 [Device List Monitor] DEBUG Studio for Android - Device connected: 42f7401e0688bfaf
+2016-11-27 13:04:23,073 [Device List Monitor] DEBUG Studio for Android - Device changed: 42f7401e0688bfaf
+2016-11-27 13:42:59,582 [Device List Monitor] DEBUG Studio for Android - Device disconnected: 42f7401e0688bfaf
+2016-11-27 13:47:57,844 [Device List Monitor] DEBUG Studio for Android - Device disconnected: 410042b9e4e2a131
+2016-11-27 13:48:08,174 [Device List Monitor] DEBUG Studio for Android - Device connected: 410042b9e4e2a131
+2016-11-27 13:48:18,343 [Device List Monitor] DEBUG Studio for Android - Device changed: 410042b9e4e2a131
+2016-11-27 14:20:38,336 [Device List Monitor] DEBUG Studio for Android - Device disconnected: 410042b9e4e2a131
+2016-11-27 14:20:43,361 [Device List Monitor] DEBUG Studio for Android - Device connected: 2a23882
+2016-11-27 14:20:53,520 [Device List Monitor] DEBUG Studio for Android - Device changed: 2a23882

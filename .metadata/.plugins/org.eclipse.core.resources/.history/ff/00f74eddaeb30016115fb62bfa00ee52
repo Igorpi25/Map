@@ -1,0 +1,45 @@
+package com.ivanov.tech.map.tester;
+
+import android.database.MatrixCursor;
+import android.util.Log;
+import android.view.View;
+
+import com.ivanov.tech.map.Map;
+import com.ivanov.tech.map.R;
+import com.ivanov.tech.profile.ui.FragmentDetailsGroupEdit;
+import com.ivanov.tech.profile.ui.FragmentDetails.CloseListener;
+
+public class FragmentExtendedGroup extends FragmentDetailsGroupEdit{
+	 
+	private static final String TAG = FragmentExtendedGroup.class
+            .getSimpleName();    
+	
+	 public static FragmentExtendedGroup newInstance(int user_server_id, CloseListener closelistener) {
+		 FragmentExtendedGroup f = new FragmentExtendedGroup();        
+	        f.closelistener =closelistener;
+	        f.group_server_id=user_server_id;
+	        
+	        return f;
+	 }
+	 
+	 @Override
+	 public void onClick(View v) {
+		 if((v.getTag()!=null)&&(v.getTag().toString()=="show_in_map")){
+			 Log.d(TAG, "onClick show_in_map");			
+			 Map.showMapGroup(group_server_id, getActivity(), getFragmentManager(), R.id.main_container);			
+			 return;
+		 }
+			
+		super.onClick(v);
+	 }
+
+	
+	 protected MatrixCursor getGroupMatrixCursor(int _id){
+
+	    	MatrixCursor matrixcursor=super.getGroupMatrixCursor(_id);
+	    	
+	    	matrixcursor.addRow(new Object[]{matrixcursor.getCount(),TYPE_BUTTON_ALTER,"show_in_map",getActivity().getResources().getString(R.string.button_show_in_map)});
+	    	
+	    	return matrixcursor;
+	 }
+}

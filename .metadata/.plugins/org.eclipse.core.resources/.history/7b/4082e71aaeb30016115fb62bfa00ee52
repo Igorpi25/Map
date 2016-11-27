@@ -1,0 +1,199 @@
+package com.ivanov.tech.map.tester;
+
+import android.app.ProgressDialog;
+import android.content.Context;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
+import android.util.Log;
+import android.widget.Toast;
+
+import com.actionbarsherlock.view.Menu;
+import com.actionbarsherlock.view.MenuInflater;
+import com.actionbarsherlock.view.MenuItem;
+import com.ivanov.tech.friend.Friend;
+import com.ivanov.tech.friend.ui.FragmentContact;
+import com.ivanov.tech.map.Map;
+import com.ivanov.tech.map.R;
+import com.ivanov.tech.profile.Profile;
+import com.ivanov.tech.profile.Profile.Status;
+import com.ivanov.tech.profile.ui.FragmentDetails;
+import com.ivanov.tech.profile.ui.FragmentDetailsGroup;
+import com.ivanov.tech.profile.ui.FragmentDetailsGroupEdit;
+import com.ivanov.tech.profile.ui.FragmentDetails.CloseListener;
+import com.ivanov.tech.session.Session;
+
+public class FragmentTester extends com.ivanov.tech.friend.tester.FragmentTester{
+	
+private static final String TAG =  FragmentTester.class.getSimpleName();
+	
+    MenuItem menuMapContacts=null;
+    
+    public static FragmentTester newInstance(CloseListener listener) {
+    	FragmentTester f = new FragmentTester();        
+        f.closelistener =listener;
+        
+        return f;
+    }
+    
+	@Override
+    public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
+        
+		super.onCreateOptionsMenu(menu, inflater);
+		
+		menuMapContacts=menu.add(Menu.NONE, 5, Menu.NONE,R.string.menu_map_contacts);
+        menuMapContacts.setShowAsAction(MenuItem.SHOW_AS_ACTION_IF_ROOM);
+        
+        getSherlockActivity().getSupportActionBar().setTitle(R.string.app_name);
+    }
+    
+	@Override
+	public boolean onOptionsItemSelected(MenuItem item) {
+	   
+		int id = item.getItemId();
+	    
+		
+		if(id==menuMapContacts.getItemId()){
+			Log.d(TAG, "onOptionsItemSelected menuMapContact");
+			
+			Map.showMapFriends(getActivity(), getFragmentManager(), R.id.main_container);
+			
+			return true;
+		}		
+		
+		return super.onOptionsItemSelected(item);
+	}
+	
+	//------Details Item Click Listener
+	
+	@Override
+	public void onSuccess(int type,String key, String value, Object result) {
+		
+		switch(type){
+		
+		case TYPE_LINK_USER:{
+			int user_id=(Integer)result;
+			
+			if(Session.getUserId()==user_id)
+				Profile.showDetailsUserEdit(user_id, getActivity(), getFragmentManager(), R.id.main_container, null);
+			else
+				showExtendedContact(user_id, getActivity(), getFragmentManager(), R.id.main_container, null);
+		}break;
+		
+		case TYPE_LINK_GROUP:{
+			int group_id=(Integer)result;
+			
+			showExtendedGroup(group_id, getActivity(), getFragmentManager(), R.id.main_container, null);
+			
+		}break;
+		
+		}
+	}
+	
+	//------Fragment Utils------------------------------
+	
+	public static void showExtendedContact(final int userid,final Context context, final FragmentManager fragmentManager, final int container,final CloseListener listener){
+    	
+		final ProgressDialog pDialog = new ProgressDialog(context);
+    	pDialog.setMessage("Synch with server...");
+    	pDialog.setCancelable(false);
+    	
+    	pDialog.show();
+    	
+		Profile.getUsersRequest(Profile.URL_USERS+"/"+userid,context,new Status(){
+			
+			@Override
+			public void isActual() {
+				pDialog.hide();
+				createExtendedContactFragment(userid,context,fragmentManager,container,listener);
+			}
+
+			@Override
+			public void onFailed() {
+				pDialog.hide();
+				Toast.makeText(context, "Failed to update users", Toast.LENGTH_SHORT).show();
+			}
+			
+		});
+	}
+	
+	public static void createExtendedContactFragment(final int userid, final Context context, final FragmentManager fragmentManager, final int container,final CloseListener listener){
+
+        try{
+            if(fragmentManager.findFragmentByTag("ExtendedContact").isVisible()){
+                return;
+            }else{
+                throw (new NullPointerException());
+            }
+        }catch(NullPointerException e){
+
+        	FragmentExtendedContact fragment=FragmentExtendedContact.newInstance(userid,listener);
+
+            FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+            fragmentTransaction.add(container, fragment, "ExtendedContact");
+            fragmentTransaction.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN);
+            fragmentTransaction.addToBackStack("ExtendedContact");
+            fragmentTransaction.commit();
+        }
+    }
+	
+	public static void showExtendedGroup(final int group_server_id, final Context context, final FragmentManager fragmentManager, final int container,final FragmentDetails.CloseListener statusListener){
+
+		final ProgressDialog pDialog = new ProgressDialog(context);
+    	pDialog.setMessage("Synch with server...");
+    	pDialog.setCancelable(false);
+    	
+    	pDialog.show();
+    	
+    	Profile.getGroupsRequest(Profile.URL_GROUPS+"/"+group_server_id,context,new Status(){
+			
+			@Override
+			public void isActual() {
+				pDialog.hide();
+				Profile.getGroupUsersRequest(group_server_id,context,new Status(){
+
+					@Override
+					public void isActual() {
+						//Log.e(TAG, "showDetailsGroupEdit getGroupUsersRequest.isActual");
+						createExtendedGroupFragment(group_server_id,context,fragmentManager,container,statusListener);
+					}
+
+					@Override
+					public void onFailed() {
+						//Log.e(TAG, "showDetailsGroupEdit getGroupUsersRequest.onFailed");
+					}
+					
+				});
+				
+			}
+
+			@Override
+			public void onFailed() {
+				pDialog.hide();
+				Toast.makeText(context, "Failed to update group", Toast.LENGTH_SHORT).show();
+			}
+			
+		});
+		
+		
+    }
+	
+	public static void createExtendedGroupFragment(final int group_server_id, final Context context, final FragmentManager fragmentManager, final int container,final FragmentDetails.CloseListener statusListener){
+
+        try{
+            if(fragmentManager.findFragmentByTag("ExtendedGroup").isVisible()){
+                return;
+            }else{
+                throw (new NullPointerException());
+            }
+        }catch(NullPointerException e){
+
+        	FragmentExtendedGroup fragment=FragmentExtendedGroup.newInstance(group_server_id, statusListener);
+
+            FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+            fragmentTransaction.add(container, fragment, "ExtendedGroup");
+            fragmentTransaction.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN);
+            fragmentTransaction.addToBackStack("ExtendedGroup");
+            fragmentTransaction.commit();
+        }
+    }
+}

@@ -1,0 +1,46 @@
+package com.ivanov.tech.map.tester;
+
+import android.database.MatrixCursor;
+import android.util.Log;
+import android.view.View;
+
+import com.ivanov.tech.map.Map;
+import com.ivanov.tech.map.R;
+import com.ivanov.tech.friend.ui.FragmentContact;
+
+public class FragmentExtendedContact extends FragmentContact{
+	
+	private static final String TAG = FragmentContact.class
+            .getSimpleName(); 
+	
+	    
+    public static FragmentExtendedContact newInstance(int user_server_id, CloseListener listener) {
+    	
+    	FragmentExtendedContact f = new FragmentExtendedContact();        
+        f.closelistener =listener;
+        f.user_server_id=user_server_id;
+        
+        return f;
+    }
+    
+    @Override
+	public void onClick(View v) {
+		
+		if((v.getTag()!=null)&&(v.getTag().toString()=="show_in_map")){
+			Log.d(TAG, "onClick show_in_map");			
+			Map.showMapOneUser(user_server_id, getActivity(), getFragmentManager(), R.id.main_container);			
+			return;
+		}
+		
+		super.onClick(v);
+	}
+	
+	protected MatrixCursor getMatrixCursor(){
+
+    	MatrixCursor matrixcursor=super.getMatrixCursor();
+    	
+    	matrixcursor.addRow(new Object[]{matrixcursor.getCount(),TYPE_BUTTON_ALTER,"show_in_map",getActivity().getResources().getString(R.string.button_show_in_map)});
+    	
+    	return matrixcursor;
+    }
+}

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="com.android.volley.RetryPolicy"/>
+<fullyQualifiedTypeName name="com.android.volley.DefaultRetryPolicy"/>
+<fullyQualifiedTypeName name="com.android.volley.TimeoutError"/>
+<fullyQualifiedTypeName name="android.view.inputmethod.InputMethodManager"/>
+<fullyQualifiedTypeName name="rx.android.plugins.RxAndroidPlugins"/>
+<fullyQualifiedTypeName name="android.text.TextWatcher"/>
+<fullyQualifiedTypeName name="com.ivanov.tech.chat.R.color"/>
+<fullyQualifiedTypeName name="com.ivanov.tech.chat.R.animator"/>
+<fullyQualifiedTypeName name="com.actionbarsherlock.internal.nineoldandroids.animation.Animator"/>
+<fullyQualifiedTypeName name="android.animation.AnimatorInflater"/>
+<fullyQualifiedTypeName name="android.animation.Animator"/>
+<fullyQualifiedTypeName name="android.support.v4.app.Fragment"/>
+<fullyQualifiedTypeName name="android.R.animator"/>
+<fullyQualifiedTypeName name="android.R.transition"/>
+<fullyQualifiedTypeName name="com.ivanov.tech.chat.R.anim"/>
+<fullyQualifiedTypeName name="com.actionbarsherlock.app.SherlockFragmentActivity"/>
+<fullyQualifiedTypeName name="android.view.View"/>
+<fullyQualifiedTypeName name="android.widget.Toast"/>
+<fullyQualifiedTypeName name="com.actionbarsherlock.view.Window"/>
+<fullyQualifiedTypeName name="android.view.Window"/>
+<fullyQualifiedTypeName name="com.actionbarsherlock.ActionBarSherlock"/>
+<fullyQualifiedTypeName name="com.ivanov.tech.chat.R.id"/>
+<fullyQualifiedTypeName name="android.R"/>
+<fullyQualifiedTypeName name="android.R.id"/>
+<fullyQualifiedTypeName name="com.ivanov.tech.chat.demo.DemoActivity"/>
+<fullyQualifiedTypeName name="android.view.SubMenu"/>
+<fullyQualifiedTypeName name="android.view.Menu"/>
+<fullyQualifiedTypeName name="android.view.MenuInflater"/>
+<fullyQualifiedTypeName name="android.support.v4.app.DialogFragment"/>
+<fullyQualifiedTypeName name="android.support.v7.app.AppCompatActivity"/>
+<fullyQualifiedTypeName name="android.view.MenuItem"/>
+</qualifiedTypeNameHistroy>

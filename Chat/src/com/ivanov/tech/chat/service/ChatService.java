@@ -6,10 +6,10 @@ import com.ivanov.tech.communicator.service.TransportBase;
 import com.ivanov.tech.profile.service.TransportProfile;
 
 public class ChatService extends com.ivanov.tech.communicator.service.CommunicatorService{
-
+	
 	public final static String URL_DOMEN="igorpi25.ru";//Websocket server URL and port
-    public final static String URL_SERVER="ws://"+URL_DOMEN+":8001";//Websocket server URL and port
-    public final static String URL_START_SERVER="http://"+URL_DOMEN+"/v2/communicator/start";
+    public final static String URL_SERVER="ws://"+URL_DOMEN+":8007";//Websocket server URL and port
+    public final static String URL_START_SERVER="http://"+URL_DOMEN+"/v3/communicator/start";
 	
 	@Override
 	public ArrayList<TransportBase> createTransports() {
@@ -24,21 +24,21 @@ public class ChatService extends com.ivanov.tech.communicator.service.Communicat
 									
 		return transports;
 	}
-
+	
 	@Override
 	public String getServerUrl() {
 		// TODO Auto-generated method stub
 		return URL_SERVER;
 	}
-
+	
 	@Override
 	public String getRestartServerUrl() {		
 		return URL_START_SERVER;
 	}
-
+	
 	@Override
 	public String getCommunicatorServiceClass() {		
 		return ChatService.class.getCanonicalName();
 	}
-
+	
 }

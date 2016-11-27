@@ -1,0 +1,67 @@
+package com.ivanov.tech.map.tester;
+
+import android.os.Bundle;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
+import android.support.v7.app.AppCompatActivity;
+
+import com.ivanov.tech.map.tester.FragmentTester;
+import com.ivanov.tech.connection.Connection.ProtocolListener;
+import com.ivanov.tech.map.Map;
+import com.ivanov.tech.map.R;
+import com.ivanov.tech.map.ui.FragmentMapBase;
+import com.ivanov.tech.map.ui.FragmentMapFriends;
+import com.ivanov.tech.session.Session;
+
+public class MainActivity extends AppCompatActivity{
+	@Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        
+        Session.Initialize(getApplicationContext());
+        Map.Initialize(getApplicationContext());
+        
+        setContentView(R.layout.activity_main);
+        
+        getSupportActionBar().setHomeButtonEnabled(true);
+        getSupportActionBar().setDisplayShowCustomEnabled(true);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setDisplayUseLogoEnabled(false);
+        getSupportActionBar().setTitle(R.string.app_name);
+        
+        showTester();
+        
+    }
+
+
+    private void changeFragment(int position) {
+        switch (position) {
+            case 0:
+                showFragment( new FragmentTester() );
+                break;
+        }
+    }
+    
+
+    private void showFragment(Fragment currentFragment) {
+        FragmentManager fragmentManager = getSupportFragmentManager();
+        fragmentManager.beginTransaction()
+                .replace(R.id.main_container, currentFragment)
+                .commit();
+    }
+
+    public void showTester(){
+    	Session.checkApiKey(this, getSupportFragmentManager(), R.id.main_container, new ProtocolListener(){
+
+			@Override
+			public void onCanceled() {
+				
+			}
+
+			@Override
+			public void isCompleted() {
+				changeFragment(0);		
+			}
+        });
+    }
+}

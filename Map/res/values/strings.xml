@@ -1,0 +1,12 @@
+<resources>
+
+    <string name="app_name">Map</string>
+	<string name="logo">com.ivanov.tech.chat</string>
+    <string name="subs">(demo activity)</string>
+    
+    <string name="button_start_text">Start</string>
+    <string name="menu_map_contacts">Map contacts</string>
+    <string name="button_show_in_map">Show in map</string>
+    
+    
+</resources>

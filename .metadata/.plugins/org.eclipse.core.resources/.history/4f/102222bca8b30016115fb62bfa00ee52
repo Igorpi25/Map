@@ -1,0 +1,21 @@
+package com.ivanov.tech.map.service;
+
+import java.util.ArrayList;
+
+import com.ivanov.tech.map.service.TransportMap;
+import com.ivanov.tech.connection.service.TransportBase;
+
+public class ConnectionService extends com.ivanov.tech.connection.service.ConnectionService{
+
+	@Override
+	public ArrayList<TransportBase> createTransports() {
+		
+		ArrayList<TransportBase> transports=new ArrayList<TransportBase>();		
+		
+		TransportMap transportmap=new TransportMap(this);		
+		transports.add(transportmap);
+		
+		return transports;
+	}
+
+}

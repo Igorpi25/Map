@@ -1,0 +1,119 @@
+package com.ivanov.tech.map.ui;
+
+import android.database.Cursor;
+import android.net.Uri;
+import android.os.Bundle;
+import android.support.v4.content.CursorLoader;
+import android.support.v4.content.Loader;
+import android.util.Log;
+
+import com.ivanov.tech.map.Map;
+import com.ivanov.tech.profile.Profile.Status;
+import com.ivanov.tech.profile.provider.DBContentProvider;
+import com.ivanov.tech.profile.provider.DBContract;
+import com.ivanov.tech.session.Session;
+
+public class FragmentMapFriends extends FragmentMapBase{
+
+	private static final String TAG=FragmentMapFriends.class.getSimpleName();
+	
+    protected static final int LOADER_FRIENDS_LOCATION = 2;
+	
+	public static FragmentMapFriends newInstance() {
+		
+		FragmentMapFriends f = new FragmentMapFriends();
+		
+        return f;
+    }
+	
+	@Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        Log.d(TAG, "onCreate");
+        
+        getLoaderManager().initLoader(LOADER_FRIENDS_LOCATION, null, FragmentMapFriends.this);
+		
+    }
+	
+    @Override 
+    public void onDestroy() { 
+        super.onDestroy(); 
+        Log.d(TAG, "onDestroy");
+        
+        getLoaderManager().destroyLoader(LOADER_FRIENDS_LOCATION);
+    }
+
+//----------------BaseMethod---------------------    
+    
+    @Override
+    protected int getRecieverType(){
+    	
+    	return Map.RECIEVER_TYPE_FRIENDS;    	
+    }
+	    
+//----------------Loaders-----------------
+	
+    @Override
+    public Loader<Cursor> onCreateLoader(int id, Bundle args) {
+    	
+        switch(id) {
+            
+            case LOADER_FRIENDS_LOCATION:{
+            	String[] projection=null;
+                Uri uri=null;
+
+                com.ivanov.tech.map.provider.DBContract.UserLocation UserLocation=null;
+                
+                projection = new String[]{
+                        UserLocation._ID,//0
+                        UserLocation.COLUMN_NAME_USER_ID,//1
+                        UserLocation.COLUMN_NAME_LATITUDE,//2
+                        UserLocation.COLUMN_NAME_LONGITUDE,//3
+                        UserLocation.COLUMN_NAME_TIMESTAMP,//4
+                        UserLocation.COLUMN_NAME_ACCURACY,//5
+                        UserLocation.COLUMN_NAME_PROVIDER,//6
+                        UserLocation.COLUMN_NAME_TIMESTAMP_LOCAL//7                        
+                };
+                
+                uri = com.ivanov.tech.map.provider.DBContentProvider.URI_FRIENDS_LOCATION;
+                                
+                Log.d(TAG, "onCreateLoader LOADER_USERS_LOCATION uri="+uri.toString());
+                
+                CursorLoader cursorLoader = new CursorLoader(getActivity(),
+                        uri, projection, null, null, null);
+                
+                return cursorLoader;
+            }
+        }
+        
+        return super.onCreateLoader(id, args);//UsersLoader;
+    }
+    
+    @Override
+    public void onLoadFinished(Loader<Cursor> loader, Cursor data) {
+    	
+    	super.onLoadFinished(loader, data);//UserLoader
+        
+    	switch(loader.getId()){
+        	        	
+        	case LOADER_FRIENDS_LOCATION:
+        		
+        		if(data!=null)Log.d(TAG, "onLoadFinished LOADER_USERS_LOCATION count="+data.getCount());
+        		else Log.d(TAG, "onLoadFinished LOADER_USERS_LOCATION data=null");
+        		
+        		cursor_userlocation=data;
+        		//clearRestMarkers();
+        		refreshMarkers();
+        		
+        		
+        		if(usersmap!=null)
+        			if( ( !usersmap.containsKey(0) )&&( !usersmap.containsKey(Session.getUserId()) ) )
+        				updateUser(Session.getUserId());
+                
+        		break;                
+        }
+    	        
+    }
+    
+    
+}

@@ -31,7 +31,7 @@ public class DemoActivity extends AppCompatActivity {
 	private boolean TimerFinished=false;
 	
 	//Profile URLs
-	private static final String url_server = "http://igorpi25.ru/v2/";	
+	private static final String url_server = "http://igorpi25.ru/v3/";	
 		
 	private static final String url_searchcontact = url_server+"search_contact";
 	public static final String url_avatarupload = url_server+"avatars/upload";

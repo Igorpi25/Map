@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="WorkbenchPreferenceDialogSettings">
+		<item value="374" key="DIALOG_X_ORIGIN"/>
+		<item value="8" key="DIALOG_Y_ORIGIN"/>
+	</section>
+	<section name="org.eclipse.ui.internal.QuickAccess">
+		<item value="250" key="dialogHeight"/>
+		<item value="350" key="dialogWidth"/>
+		<list key="textEntries">
+			<item value="2"/>
+			<item value="1"/>
+		</list>
+		<list key="orderedElements">
+			<item value="org.eclipse.ui.file.export(exportWizardId=com.android.ide.eclipse.adt.project.ExportWizard)"/>
+			<item value="com.android.ide.eclipse.adt.internal.assetstudio.CreateAssetSetWizard"/>
+		</list>
+		<list key="orderedProviders">
+			<item value="org.eclipse.ui.commands"/>
+			<item value="org.eclipse.ui.wizards"/>
+		</list>
+		<list key="textArray">
+			<item value="android"/>
+			<item value="export"/>
+			<item value="icon"/>
+		</list>
+	</section>
+</section>
